@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Love 🤎</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <button onclick="showSection('home')">MyLove</button>
+        <button onclick="showSection('about')">ABOUT US</button>
+        <button onclick="showSection('album')">ALBUM</button>
+        <button onclick="showSection('special')">SPECIAL MESSAGE FOR YOU</button>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="section active">
+        <div class="profile-container" onclick="showSection('about')">
+            <div class="hearts"></div>
+            <img src="/Images/Us.jpg" alt="Profile Photo" class="profile-pic">
+            <h1>For my Love</h1>
+            <p class="font1">(Angela💕)</p>
+            <p class="font2">Hi mahal ko,Happy Anniversary for both of us together this is my gift for you. I hope you will like it. Always remember you are my everything po.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="section">
+        <h1>About Us</h1>
+        <img src="/Images/About us.jpg" class="about-photo" alt="About Us Photo">
+        <p class="about-text">
+            Our story is written in moments, laughter, and endless love.
+        </p>
+    </section>
+
+    <!-- ALBUM -->
+    <section id="album" class="section">
+        <h1>Our Memories</h1>
+        <div class="album-grid">
+            <div class="album-item">
+                <img src="/Images/Photo1.jpg" onclick="openImage(this)">
+                <p>Our first memory together.🤎</p>
+            </div>
+            <div class="album-item">
+                <img src="/Images/Photo2.jpg" onclick="openImage(this)">
+                <p>Warm moments when were having a cup of tea.☕</p>
+            </div>
+            <div class="album-item">
+                <img src="/Images/Photo3.jpg" onclick="openImage(this)">
+                <p>Simple days in pure love with you.😺</p>
+            </div>
+            <div class="album-item">
+                <img src="/Images/Photo4.jpg" onclick="openImage(this)">
+                <p>Love everything about you always.🌕</p>
+            </div>
+            <div class="album-item">
+                <img src="/Images/Photo5.jpg" onclick="openImage(this)">
+                <p>My favorite person in the whole word.🌷</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIAL MESSAGE -->
+    <section id="special" class="section">
+        <img src="/Images/Foryou.jpeg" class="special-photo">
+        <div class="special-message">
+            <p class="font1">This is my gift for you my love,your very special to me your my everything xx.</p>
+            <p class="font2">My heart chose you every day ,I love you always and forever mahal ko.💕</p>
+            <p class="font3">Forever isn’t enough with you 🤎</p>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal" onclick="closeImage()">
+        <img id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
